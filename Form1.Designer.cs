@@ -30,11 +30,11 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btSave = new System.Windows.Forms.Button();
             this.btStart = new System.Windows.Forms.Button();
             this.txDir = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btSave = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +50,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(720, 37);
             this.panel1.TabIndex = 0;
+            // 
+            // btSave
+            // 
+            this.btSave.Location = new System.Drawing.Point(504, 4);
+            this.btSave.Name = "btSave";
+            this.btSave.Size = new System.Drawing.Size(75, 23);
+            this.btSave.TabIndex = 3;
+            this.btSave.Text = "保存";
+            this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // btStart
             // 
@@ -81,6 +91,7 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -92,16 +103,6 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(720, 402);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // btSave
-            // 
-            this.btSave.Location = new System.Drawing.Point(504, 4);
-            this.btSave.Name = "btSave";
-            this.btSave.Size = new System.Drawing.Size(75, 23);
-            this.btSave.TabIndex = 3;
-            this.btSave.Text = "保存";
-            this.btSave.UseVisualStyleBackColor = true;
-            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // Form1
             // 
